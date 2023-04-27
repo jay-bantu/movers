@@ -6,6 +6,7 @@ import Button from '../UI/Button/Button'
 import '../UI/Button/Button.css'
 
 import './Navbar.css'
+import Holborn from '../../assets/holborn-logo.svg'
 
 const Navbar = () => {
   const [showMenu, setShowMenu] = useState(false)
@@ -16,9 +17,10 @@ const Navbar = () => {
   return (
     <nav className='navbar container'>
       <div className='logo'>
-        <SiHackthebox color='#fff' size={33} />
+        {' '}
+        <img src={Holborn} alt='Holborn-logo' className='holbornLogo' />
         <p className='logo-text'>
-          <span>Inc</span>
+          <span>Holborn</span>
           <span>Movers</span>
         </p>
       </div>
@@ -37,16 +39,21 @@ const Navbar = () => {
             <a href='#download'>Services</a>
           </li>
           <li>
-            <a href='#subscribe'>Contact Us</a>
+            {/* <a href='#subscribe'>Contact Us</a> */}
+            <Button
+              text={'Contact Us'}
+              btnClass={'btn-dark'}
+              href={'#subscribe'}
+            />
           </li>
           {/* <li>
             <a href='#' className='btn btn-dark'>
               Get Started
             </a>
           </li> */}
-          <li className='nav-btn'>
+          {/* <li className='nav-btn'>
             <Button text={'Blog'} btnClass={'btn-dark'} href={'#faq'} />
-          </li>
+          </li> */}
         </ul>
       </menu>
       <div className='menu-icons' onClick={toggleMenu}>

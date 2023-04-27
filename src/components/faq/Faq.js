@@ -16,7 +16,7 @@ const Faq = () => {
     <section id='faq'>
       <div className='container faq'>
         <div className='u-title' data-aos='fade-up'>
-          <MdOutlineLibraryBooks color='orangered' size={30} />
+          <MdOutlineLibraryBooks color='#f3558e' size={30} />
           <h2>FAQs</h2>
           <p className='u-text-small'>Answers to all your moving queries.</p>
         </div>

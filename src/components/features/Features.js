@@ -18,7 +18,7 @@ const Features = () => {
     <section id='features'>
       <div className='container features'>
         <div className='title' data-aos='fade-up'>
-          <BsFillBookmarkStarFill color='orangered' size={30} />
+          <BsFillBookmarkStarFill color='#f3558e' size={30} />
           <h2>Learn More About Our Team</h2>
           <p className='u-text-small'>
             {/* SocialX app has Lorem ipsum dolor sit amet consectetur adipisicing

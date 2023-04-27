@@ -22,7 +22,8 @@ a.btn-dark {
   border: 2px solid #fff;
 }
 a.btn-light {
-  background: orangered;
+  background: #f3558e;
+  /* background: orangered; */
   border: 2px solid transparent;
   color: #fff;
 }

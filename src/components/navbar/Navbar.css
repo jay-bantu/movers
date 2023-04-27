@@ -10,12 +10,19 @@
   justify-content: center;
   align-items: center;
 }
+.holbornLogo {
+  position: absolute;
+  left: 20px;
+  width: 20%;
+}
 
 .logo-text {
+  position: absolute;
   font-size: 40px;
   font-weight: 300;
   color: white;
   outline: none;
+  left: 210px;
 }
 .logo-text span:nth-child(1) {
   color: white;
@@ -23,11 +30,19 @@
 
 .logo-text span:nth-child(2) {
   font-weight: 600;
-  color: orangered;
+  color: #f3558e;
+  /* color: orangered; */
   outline: none;
   animation: tubeLight 5s linear infinite;
 }
 
+/* .holborn {
+  position: relative;
+  display: flex;
+}
+.holbornB {
+  position: absolutes;
+} */
 @keyframes tubeLight {
   0%,
   18%,
@@ -44,10 +59,15 @@
   50%,
   60.1%,
   65%,
-  100% {
+  /* 100% {
     color: orange;
     text-shadow: 0 0 10px orangered, 0 0 20px orangered, 0 0 40px orangered,
       0 0 80px orangered, 0 0 160px orangered;
+  } */
+  100% {
+    color: #f3558e;
+    text-shadow: 0 0 10px #ce7d9b, 0 0 20px #ce7d9b, 0 0 40px #ce7d9b,
+      0 0 80px #ce7d9b, 0 0 160px #ce7d9b;
   }
 }
 
