@@ -1,5 +1,6 @@
 .navbar {
   display: flex;
+  position: relative;
   justify-content: space-between;
   align-items: center;
   height: 8rem;
@@ -9,20 +10,23 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  padding-top: 4rem;
 }
 .holbornLogo {
+  display: block;
   position: absolute;
-  left: 20px;
-  width: 20%;
+  left: -2rem;
+  width: 37rem;
+  height: 21rem;
 }
 
 .logo-text {
   position: absolute;
-  font-size: 40px;
+  font-size: 4rem;
   font-weight: 300;
   color: white;
   outline: none;
-  left: 210px;
+  left: 22rem;
 }
 .logo-text span:nth-child(1) {
   color: white;
@@ -73,16 +77,22 @@
 
 .nav-links {
   display: flex;
+  justify-content: center;
+  align-items: center;
   color: #fff;
 }
 
 .nav-links li {
-  margin-left: 10px;
+  margin-left: 1rem;
   list-style: none;
+}
+menu {
+  width: 47vw;
+  padding-top: 4rem;
 }
 
 .nav-links a {
-  font-size: 16px;
+  font-size: 2.5rem;
   font-weight: 300;
   color: #fff;
   text-decoration: none;
@@ -118,10 +128,45 @@ a.btn-light {
 }
 
 /* Media Queries */
+
+@media screen and (max-width: 1200px) {
+  /* .logo-text{
+    font-size: 3.5rem;
+  } */
+  .nav-links a {
+    font-size: 2.3rem;
+  }
+}
+@media screen and (max-width: 1024px) {
+  .nav-links li {
+    margin-left: 5px;
+  }
+  .holbornLogo {
+    left: -4rem;
+  }
+  .logo-text {
+    left: 20rem;
+  }
+  /* .logo-text{
+    font-size: 3rem;
+  } */
+}
+@media screen and (max-width: 950px) {
+  .logo-text {
+    font-size: 3rem;
+  }
+  .nav-links a {
+    font-size: 2.2rem;
+  }
+}
+
 @media screen and (max-width: 769px) {
   /* hide nav button on navbar */
   .nav-btn {
     display: none;
+  }
+  .nav-links a {
+    font-size: 2rem;
   }
 }
 @media screen and (max-width: 600px) {
@@ -138,16 +183,16 @@ a.btn-light {
 
   .navbar .menu-icons {
     display: block;
+    padding-top: 4rem;
   }
 
-  .navbar #nav-links-mobile,
-  .navbar #nav-links-mobile-hide {
+  .navbar #nav-links-mobile {
     display: block;
     position: absolute;
     list-style: none;
     background: #0a1930;
     left: 0;
-    top: 80px;
+    top: 8rem;
     width: 100%;
     transition: all 0.3s;
     border-top: 1px solid #fff;

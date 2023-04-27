@@ -22,11 +22,12 @@
 .features-content {
   display: flex;
   justify-content: center;
+  align-items: center;
   /* padding: 3rem 0; */
 }
 
 .features-left {
-  flex: 1;
+  flex: 0 0 45%;
   text-align: center;
 }
 .features-left img {

@@ -58,7 +58,7 @@ const Footer = () => {
           {/* <img src={logo} alt='logo' /> */}
           <div className='logo'>
             <SiHackthebox color='#fff' size={33} />
-            <p className='logo-text'>
+            <p className='logo-text--footer'>
               Inc<span>Movers</span>
             </p>
           </div>

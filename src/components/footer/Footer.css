@@ -27,6 +27,18 @@ section#footer {
 .footer-box .footer-links a {
   font-size: 1.2rem;
 }
+.footer-box{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.logo-text--footer{
+  font-size: 4rem;
+  font-weight: 300;
+  color: white;
+  outline: none;
+}
 
 .footer-links {
   display: flex;

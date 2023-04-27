@@ -1,7 +1,7 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap");
 
 :root {
-  --font-family: 'Poppins', sans-serif;
+  --font-family: "Poppins", sans-serif;
   --dark-blue: #0a1930;
   --light-blue: #1f93ff;
 
@@ -12,10 +12,12 @@
   --box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
 }
 
-* {
+*,
+*::before,
+*::after {
   margin: 0;
   padding: 0;
-  box-sizing: border-box;
+  box-sizing: inherit;
   scroll-behavior: smooth;
 }
 
@@ -24,8 +26,10 @@ html {
 }
 
 body {
-  font-family: 'Poppins', sans-serif;
   overflow-x: hidden;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+
 }
 
 section {
@@ -42,6 +46,11 @@ section {
 /* Text styles */
 .u-text-small {
   font-size: 1.4rem;
+  line-height: 1.4;
+  font-weight: 300;
+}
+.u-text-medium {
+  font-size: 2rem;
   line-height: 1.4;
   font-weight: 300;
 }
@@ -79,8 +88,35 @@ section {
   color: var(--dark-text);
 }
 
-@media screen and (max-width: 1024) {
+@media screen and (max-width: 1200px) {
   html {
     font-size: 60%;
   }
 }
+@media screen and (max-width: 1050px) {
+  html {
+    font-size: 55%;
+  }
+  .container{
+    padding: 0 6rem;
+  }
+}
+@media screen and (max-width: 900px) {
+  html {
+    font-size: 50%;
+  }
+ 
+}
+@media screen and (max-width: 790px) {
+  html {
+    font-size: 45%;
+  }
+ 
+}
+@media screen and (max-width: 700px) {
+  html {
+    font-size: 40%;
+  }
+ 
+}
+
